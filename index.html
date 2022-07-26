@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Organization Chart</title>
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/orgchart_master.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+  <main>
+    <section id="imageContainer">
+    	<div id="employeeImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
+    		<img src="images/andy.jpg"/>
+    		<img src="images/ashley.jpg"/>
+    		<img src="images/beth.jpg"/>
+    		<img src="images/bill.jpg"/>
+      </div>
+    </section>
+
+    <nav id="bottomNav">
+    	<ul id="navList">
+        	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+            <li><div class="sigilContainer andy" data-offset="0"></div></li>
+            <li><div class="sigilContainer ashley" data-offset="1"></div></li>
+            <li><div class="sigilContainer beth" data-offset="2"></div></li>
+            <li><div class="sigilContainer bill" data-offset="3"></div></li>
+        </ul>
+    </nav>
+
+    <h1 class="employee-name">Corporate Organization</h1><!-- replace this with the house name -->
+
+    <p class="employee-desc"></p><!-- replace this with house details (github gist) -->
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
